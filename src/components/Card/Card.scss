@@ -1,0 +1,22 @@
+.Card {
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.02);
+  padding: 24px 0;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  & &__time {
+    display: inline-block;
+    margin: 0 24px 8px;
+  }
+
+  & &__title {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 16px;
+    margin: 0 24px 16px;
+  }
+}

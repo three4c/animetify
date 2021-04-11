@@ -1,0 +1,16 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: ./docker/node/Dockerfile
+    container_name: frontend
+    environment:
+      TZ: Asia/Tokyo
+    tty: true
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: yarn dev

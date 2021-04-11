@@ -29,6 +29,8 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+.env
+.env.mysql
 
 # vercel
 .vercel
@@ -36,6 +38,8 @@ yarn-error.log*
 # ESLint
 .eslintcache
 
-#Database
-/database/mysql.env
+# database
 /database/dbdata
+
+# api
+/dist

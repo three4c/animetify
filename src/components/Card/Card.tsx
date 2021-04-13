@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Card.scss';
+import styles from './Card.module.scss';
 
 interface CardProps {
   /** タイトル */
@@ -9,17 +9,13 @@ interface CardProps {
   broadcastStartDate: string;
 }
 
-const Card: React.FC<CardProps> = (props) => {
-  console.log('a');
-
-  return (
-    <div className="Card util-focus" tabIndex={0}>
-      <time className="Card__time" dateTime={props.broadcastStartDate}>
-        {props.broadcastStartDate.replace(/-/g, '.')}
-      </time>
-      <h2 className="Card__title">{props.title}</h2>
-      {props.children}
-    </div>
-  );
-};
+const Card: React.FC<CardProps> = (props) => (
+  <div className={`${styles.Card} util-focus`} tabIndex={0}>
+    <time className={styles.Card__time} dateTime={props.broadcastStartDate}>
+      {props.broadcastStartDate.replace(/-/g, '.')}
+    </time>
+    <h2 className={styles.Card__title}>{props.title}</h2>
+    {props.children}
+  </div>
+);
 export default Card;

@@ -1,0 +1,9 @@
+@use './reset';
+@use './base';
+@use './util';
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

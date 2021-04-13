@@ -12,7 +12,7 @@ export const getAnisonProgramList = (
     const MYSQL_SETTING = {
       host: process.env.MYSQL_ROOT_HOST,
       password: process.env.MYSQL_ROOT_PASSWORD,
-      port: process.env.MYSQL_PORT,
+      port: Number(process.env.MYSQL_PORT),
       user: process.env.MYSQL_USER,
       database: process.env.MYSQL_DATABASE,
     };

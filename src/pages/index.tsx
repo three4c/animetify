@@ -1,15 +1,13 @@
 import React from 'react';
 
-const Home: React.FC = () => (
-  <div>
-    <nav>
-      <ul>
-        <li>
-          <p>hoge</p>
-        </li>
-      </ul>
-    </nav>
-  </div>
-);
+import Card from 'components/Card/Card';
 
-export default Home;
+const App: React.FC = () => {
+  return (
+    <Card title="タイトル" broadcastStartDate="2020">
+      hoge
+    </Card>
+  );
+};
+
+export default App;

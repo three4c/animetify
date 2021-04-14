@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Classnames from 'classnames';
+import clsx from 'clsx';
 
 import { useDispatch } from 'react-redux';
 import { setSearchText } from '../../store';
@@ -70,10 +70,6 @@ const Suggest: React.FC<SuggestProps> = (props) => {
     dispath(setSearchText(value));
   };
 
-  const classNameForList = Classnames('Suggest__list', {
-    'Suggest__list--pointerEvents': isPointerEvnets,
-  });
-
   return (
     <React.Fragment>
       {suggestions.length !== 0 && (
@@ -83,7 +79,11 @@ const Suggest: React.FC<SuggestProps> = (props) => {
             isPointerEvnets ? setPointerEvents(false) : undefined
           }
         >
-          <ul className={classNameForList}>
+          <ul
+            className={clsx(styles.Suggest__list, {
+              [styles.Suggest__listPointerEvents]: isPointerEvnets,
+            })}
+          >
             {suggestions.map((item, index) => (
               <li className={styles.Suggest__listItem} key={index}>
                 <button

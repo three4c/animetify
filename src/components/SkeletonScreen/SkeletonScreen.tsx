@@ -1,4 +1,5 @@
 import React from 'react';
+import clsx from 'clsx';
 
 import styles from './SkeletonScreen.module.scss';
 
@@ -16,28 +17,52 @@ const SkeletonScreen: React.FC<SkeletonScreenProps> = (props) => (
       {[...Array(props.length)].map((_, index) => (
         <li className={styles.SkeletonScreen__item} key={index}>
           <div
-            className={`${styles.SkeletonScreen__shimmer} ${styles.SkeletonScreen__itemTime}`}
+            className={clsx(
+              styles.SkeletonScreen__shimmer,
+              styles.SkeletonScreen__itemTime
+            )}
           />
           <div
-            className={`${styles.SkeletonScreen__shimmer} ${styles.SkeletonScreen__itemTitle}}`}
+            className={clsx(
+              styles.SkeletonScreen__shimmer,
+              styles.SkeletonScreen__itemTitle
+            )}
           />
           <div
-            className={`${styles.SkeletonScreen__shimmer} ${styles.SkeletonScreen__itemTag}`}
+            className={clsx(
+              styles.SkeletonScreen__shimmer,
+              styles.SkeletonScreen__itemTag
+            )}
           />
           <div
-            className={`${styles.SkeletonScreen__shimmer} ${styles.SkeletonScreen__itemText}`}
+            className={clsx(
+              styles.SkeletonScreen__shimmer,
+              styles.SkeletonScreen__itemText
+            )}
           />
           <div
-            className={`${styles.SkeletonScreen__shimmer} ${styles.SkeletonScreen__itemSubText}`}
+            className={clsx(
+              styles.SkeletonScreen__shimmer,
+              styles.SkeletonScreen__itemSubText
+            )}
           />
           <div
-            className={`${styles.SkeletonScreen__shimmer} ${styles.SkeletonScreen__itemTag}`}
+            className={clsx(
+              styles.SkeletonScreen__shimmer,
+              styles.SkeletonScreen__itemTag
+            )}
           />
           <div
-            className={`${styles.SkeletonScreen__shimmer} ${styles.SkeletonScreen__itemText}`}
+            className={clsx(
+              styles.SkeletonScreen__shimmer,
+              styles.SkeletonScreen__itemText
+            )}
           />
           <div
-            className={`${styles.SkeletonScreen__shimmer} ${styles.SkeletonScreen__itemSubText}`}
+            className={clsx(
+              styles.SkeletonScreen__shimmer,
+              styles.SkeletonScreen__itemSubText
+            )}
           />
         </li>
       ))}

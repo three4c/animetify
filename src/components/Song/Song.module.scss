@@ -18,8 +18,7 @@
   & &__badge {
     margin-bottom: 8px;
 
-    &Description,
-    &BroadcastOrder {
+    &Description {
       border-radius: 10px;
       color: #fff;
       display: inline-block;
@@ -32,7 +31,7 @@
       margin-right: 4px;
       font-weight: 500;
 
-      &--OP {
+      &Op {
         background-color: #fcad43;
 
         & + .Song__badgeBroadcastOrder {
@@ -40,17 +39,15 @@
         }
       }
 
-      &--ED {
+      &Ed {
         background-color: #0b62e5;
 
         & + .Song__badgeBroadcastOrder {
           background-color: #0b62e5;
         }
       }
-    }
 
-    &BroadcastOrder {
-      &.Song__badgeBroadcastOrder--spot {
+      &Spot {
         background-color: #3cb371;
       }
     }
@@ -79,7 +76,7 @@
       width: 100%;
     }
 
-    &--close {
+    &Close {
       &::before {
         height: 152px;
       }

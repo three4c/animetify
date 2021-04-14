@@ -1,6 +1,6 @@
 .Suggest {
   & &__list {
-    &.Suggest__list--pointerEvents {
+    &pointerEvents {
       pointer-events: none;
     }
 

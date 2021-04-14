@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Classnames from 'classnames';
+import clsx from 'clsx';
 
 import styles from './Song.module.scss';
 
@@ -23,10 +23,6 @@ const Song: React.FC<SongProps> = (props) => {
   const liRef = Array.from({ length: props.items.length }, () =>
     React.createRef<HTMLLIElement>()
   );
-
-  const classNameForExpand = Classnames('Song__expand', {
-    'Song__expand--close': !isOpen && props.items.length > MAX_SONG_LENGTH,
-  });
 
   useEffect(() => {
     let minSum = 0;
@@ -60,7 +56,10 @@ const Song: React.FC<SongProps> = (props) => {
   return (
     <div className={styles.Song}>
       <div
-        className={classNameForExpand}
+        className={clsx(styles.Song__expand, {
+          [styles.Song__expandClose]:
+            !isOpen && props.items.length > MAX_SONG_LENGTH,
+        })}
         aria-expanded={isOpen}
         style={{
           maxHeight: `${
@@ -76,39 +75,34 @@ const Song: React.FC<SongProps> = (props) => {
         }}
       >
         <ol className={styles.Song__list}>
-          {props.items.map((item, index) => {
-            const classNamesForDescription = Classnames(
-              'Song__badgeDescription',
-              {
-                [`Song__badgeDescription--${item.animeDescription}`]: item.animeDescription,
-              }
-            );
-
-            const classNamesForBroadcastOrder = Classnames(
-              'Song__badgeBroadcastOrder',
-              {
-                'Song__badgeBroadcastOrder--spot':
-                  item.broadcastOrder.length > 2,
-              }
-            );
-
-            return (
-              <li key={index} className={styles.Song__item} ref={liRef[index]}>
-                <div className={styles.Song__badge}>
-                  <span className={classNamesForDescription}>
-                    {item.animeDescription}
+          {props.items.map((item, index) => (
+            <li key={index} className={styles.Song__item} ref={liRef[index]}>
+              <div className={styles.Song__badge}>
+                <span
+                  className={clsx(styles.Song__badgeDescription, {
+                    [styles.Song__badgeDescriptionOp]:
+                      item.animeDescription === 'OP',
+                    [styles.Song__badgeDescriptionEd]:
+                      item.animeDescription === 'ED',
+                  })}
+                >
+                  {item.animeDescription}
+                </span>
+                {item.broadcastOrder && (
+                  <span
+                    className={clsx(
+                      styles.Song__badgeDescription,
+                      styles.Song__badgeDescriptionSpot
+                    )}
+                  >
+                    {item.broadcastOrder}
                   </span>
-                  {item.broadcastOrder && (
-                    <span className={classNamesForBroadcastOrder}>
-                      {item.broadcastOrder}
-                    </span>
-                  )}
-                </div>
-                <h3 className={styles.Song__title}>{item.musicName}</h3>
-                <p className={styles.Song__artist}>{item.artistName}</p>
-              </li>
-            );
-          })}
+                )}
+              </div>
+              <h3 className={styles.Song__title}>{item.musicName}</h3>
+              <p className={styles.Song__artist}>{item.artistName}</p>
+            </li>
+          ))}
         </ol>
       </div>
       {props.items.length > MAX_SONG_LENGTH && (

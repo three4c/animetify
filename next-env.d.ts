@@ -10,8 +10,3 @@ declare namespace NodeJS {
     readonly MYSQL_DATABASE: string;
   }
 }
-
-declare module '*.scss' {
-  const classes: { readonly [key: string]: string };
-  export default classes;
-}

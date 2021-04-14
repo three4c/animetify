@@ -1,0 +1,102 @@
+.Song {
+  & &__list {
+    margin: 0 24px;
+  }
+
+  & &__item:not(:last-child) {
+    padding-bottom: 16px;
+  }
+
+  & &__title {
+    margin-bottom: 2px;
+  }
+
+  & &__artist {
+    line-height: 1.2;
+  }
+
+  & &__badge {
+    margin-bottom: 8px;
+
+    &Description,
+    &BroadcastOrder {
+      border-radius: 10px;
+      color: #fff;
+      display: inline-block;
+      padding: 0 16px;
+      line-height: 20px;
+      height: 20px;
+    }
+
+    &Description {
+      margin-right: 4px;
+      font-weight: 500;
+
+      &--OP {
+        background-color: #fcad43;
+
+        & + .Song__badgeBroadcastOrder {
+          background-color: #fcad43;
+        }
+      }
+
+      &--ED {
+        background-color: #0b62e5;
+
+        & + .Song__badgeBroadcastOrder {
+          background-color: #0b62e5;
+        }
+      }
+    }
+
+    &BroadcastOrder {
+      &.Song__badgeBroadcastOrder--spot {
+        background-color: #3cb371;
+      }
+    }
+  }
+
+  & &__no {
+    font-size: 1.4rem;
+  }
+
+  & &__expand {
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.4s cubic-bezier(0, 0, 0.2, 1);
+
+    &::before {
+      background: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 1)
+      );
+      content: '';
+      transition: height 0.4s cubic-bezier(0, 0, 0.2, 1);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 0;
+      width: 100%;
+    }
+
+    &--close {
+      &::before {
+        height: 152px;
+      }
+    }
+  }
+
+  & &__button {
+    background-color: #fff;
+    border: none;
+    border-radius: 0 0 16px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 24px 0;
+    margin-bottom: -24px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+}

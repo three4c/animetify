@@ -1,0 +1,31 @@
+.Suggest {
+  & &__list {
+    &.Suggest__list--pointerEvents {
+      pointer-events: none;
+    }
+
+    &Button {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: left;
+      transition: background-color 0.1s;
+      width: 100%;
+
+      &:focus {
+        background-color: #fcad43;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  & &__listButton,
+  & &__notFound {
+    color: #333;
+    line-height: 78px;
+    padding: 0 24px;
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+}

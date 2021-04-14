@@ -1,0 +1,63 @@
+.Search {
+  position: relative;
+
+  & &__input {
+    border: none;
+    border-bottom: 2px solid #eee;
+    font-size: 3.2rem;
+    font-weight: 700;
+    padding: 8px 56px 8px 0;
+    width: 100%;
+    height: 56px;
+
+    &::placeholder {
+      color: #666;
+      font-style: italic;
+    }
+  }
+
+  &::before {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    );
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 56px;
+    width: 56px;
+    height: 52px;
+  }
+  
+  & &__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+
+    &Item {
+      position: relative;
+      height: 54px;
+      width: 54px;
+
+      &:not(:last-child)::before {
+        background-color: #eee;
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        right: 0;
+        height: 32px;
+        width: 2px;
+      }
+    }
+
+    .fa-times,
+    .fa-search {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

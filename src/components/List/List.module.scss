@@ -1,0 +1,32 @@
+.List {
+  & &__header {
+    margin-bottom: 48px;
+  }
+
+  & &__title {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  & &__works {
+    display: block;
+    font-weight: 400;
+  }
+
+  & &__masonry {
+    display: flex;
+  }
+
+  & &__column {
+    background-clip: padding-box;
+    width: 272px !important;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  & &__noSong {
+    font-size: 1.4rem;
+  }
+}

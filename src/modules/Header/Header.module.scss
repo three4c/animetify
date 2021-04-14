@@ -1,0 +1,6 @@
+@use '../../styles/util' as *;
+
+.Header {
+  @include mediaQuery;
+  margin: 128px auto;
+}

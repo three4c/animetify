@@ -1,13 +1,18 @@
 import React from 'react';
 
-import Card from 'components/Card/Card';
+import Top from '../pages/Top/Top';
+import Header from '../modules/Header/Header';
+import Section from '../modules/Section/Section';
 
-const App: React.FC = () => {
-  return (
-    <Card title="タイトル" broadcastStartDate="2020">
-      hoge
-    </Card>
-  );
-};
+const App: React.FC = () => (
+  <div className="App">
+    <Header />
+    <main>
+      <Section>
+        <Top />
+      </Section>
+    </main>
+  </div>
+);
 
 export default App;

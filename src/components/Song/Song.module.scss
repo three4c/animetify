@@ -18,7 +18,8 @@
   & &__badge {
     margin-bottom: 8px;
 
-    &Description {
+    &Description,
+    &BroadcastOrder {
       border-radius: 10px;
       color: #fff;
       display: inline-block;
@@ -46,9 +47,11 @@
           background-color: #0b62e5;
         }
       }
+    }
 
+    &BroadcastOrder {
       &Spot {
-        background-color: #3cb371;
+        background-color: #3cb371 !important;
       }
     }
   }

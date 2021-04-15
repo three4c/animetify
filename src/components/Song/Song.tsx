@@ -90,10 +90,10 @@ const Song: React.FC<SongProps> = (props) => {
                 </span>
                 {item.broadcastOrder && (
                   <span
-                    className={clsx(
-                      styles.Song__badgeDescription,
-                      styles.Song__badgeDescriptionSpot
-                    )}
+                    className={clsx(styles.Song__badgeBroadcastOrder, {
+                      [styles.Song__badgeBroadcastOrderSpot]:
+                        item.broadcastOrder.length > 1,
+                    })}
                   >
                     {item.broadcastOrder}
                   </span>

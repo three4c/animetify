@@ -1,0 +1,280 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> Card render 1`] = `
+<SkeletonScreen
+  length={9}
+>
+  <div
+    className="SkeletonScreen"
+  >
+    <div
+      className="SkeletonScreen__shimmer SkeletonScreen__title"
+    />
+    <ul
+      className="SkeletonScreen__list"
+    >
+      <li
+        className="SkeletonScreen__item"
+        key="0"
+      >
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTime"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTitle"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+      </li>
+      <li
+        className="SkeletonScreen__item"
+        key="1"
+      >
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTime"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTitle"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+      </li>
+      <li
+        className="SkeletonScreen__item"
+        key="2"
+      >
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTime"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTitle"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+      </li>
+      <li
+        className="SkeletonScreen__item"
+        key="3"
+      >
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTime"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTitle"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+      </li>
+      <li
+        className="SkeletonScreen__item"
+        key="4"
+      >
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTime"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTitle"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+      </li>
+      <li
+        className="SkeletonScreen__item"
+        key="5"
+      >
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTime"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTitle"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+      </li>
+      <li
+        className="SkeletonScreen__item"
+        key="6"
+      >
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTime"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTitle"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+      </li>
+      <li
+        className="SkeletonScreen__item"
+        key="7"
+      >
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTime"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTitle"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+      </li>
+      <li
+        className="SkeletonScreen__item"
+        key="8"
+      >
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTime"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTitle"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemTag"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemText"
+        />
+        <div
+          className="SkeletonScreen__shimmer SkeletonScreen__itemSubText"
+        />
+      </li>
+    </ul>
+  </div>
+</SkeletonScreen>
+`;

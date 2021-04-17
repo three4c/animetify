@@ -1,5 +1,5 @@
 module.exports = {
-  ignorePatterns: ['!.eslintrc.js', '!.prettierrc.js'],
+  ignorePatterns: ['dist'],
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',

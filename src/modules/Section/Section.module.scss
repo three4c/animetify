@@ -1,12 +1,6 @@
 @use '../../styles/util' as *;
 
 .Section {
-  padding: 96px 0;
-  background-color: #f8f8f8;
-  flex: 1;
-
-  & &__inner {
-    @include mediaQuery;
-    margin: 0 auto;
-  }
+  @include mediaQuery;
+  margin: 0 auto;
 }

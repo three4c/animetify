@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import { AppProps } from 'next/app';
 
 import { Provider } from 'react-redux';
 import { ApolloProvider } from '@apollo/client';
@@ -9,7 +10,7 @@ import { store } from '../store';
 
 import 'styles/global.scss';
 
-const MyApp = ({ Component, pageProps }) => (
+const MyApp = ({ Component, pageProps }: AppProps) => (
   <React.Fragment>
     <Head>
       <link

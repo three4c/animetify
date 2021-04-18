@@ -8,6 +8,8 @@ import { ApolloProvider } from '@apollo/client';
 import client from '../graphql/client';
 import { store } from '../store';
 
+import Header from '../modules/Header/Header';
+
 import 'styles/global.scss';
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
@@ -18,11 +20,16 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
       />
     </Head>
-    <Provider store={store}>
-      <ApolloProvider client={client}>
-        <Component {...pageProps} />
-      </ApolloProvider>
-    </Provider>
+    <body className="App">
+      <Provider store={store}>
+        <ApolloProvider client={client}>
+          <Header />
+          <main>
+            <Component {...pageProps} />
+          </main>
+        </ApolloProvider>
+      </Provider>
+    </body>
   </React.Fragment>
 );
 

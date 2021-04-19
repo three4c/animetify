@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<List /> SnapShot（Not Found） 1`] = `
+<div
+  className="List"
+>
+  <div
+    className="List__header"
+  >
+    <h1
+      className="List__title"
+    >
+      見つかりませんでした :(
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`<List /> SnapShot（works） 1`] = `
+<div
+  className="List"
+>
+  <div
+    className="List__header"
+  >
+    <h1
+      className="List__title"
+    />
+    <span
+      className="List__works"
+    >
+      1作品
+    </span>
+  </div>
+  <Masonry
+    breakpointCols={
+      Object {
+        "1160": 3,
+        "1456": 4,
+        "default": 5,
+      }
+    }
+    className="List__masonry"
+    columnClassName="List__column"
+  >
+    <Card
+      broadcastStartDate="2011-04-15"
+      key="0"
+      title="電波女と青春男"
+    >
+      <Memo(Song)
+        items={
+          Array [
+            Object {
+              "animeClassification": "TV",
+              "animeDescription": "OP",
+              "animeName": "電波女と青春男",
+              "artistName": "大亀あすか",
+              "broadcastOrder": "",
+              "broadcastStartDate": "2011-04-15",
+              "musicName": "Os-宇宙人",
+            },
+            Object {
+              "animeClassification": "TV",
+              "animeDescription": "ED",
+              "animeName": "電波女と青春男",
+              "artistName": "やくしまるえつこ",
+              "broadcastOrder": "",
+              "broadcastStartDate": "2011-04-15",
+              "musicName": "ルル",
+            },
+          ]
+        }
+      />
+    </Card>
+  </Masonry>
+</div>
+`;
+
+exports[`<List /> SnapShot（year, season） 1`] = `
+<div
+  className="List"
+>
+  <div
+    className="List__header"
+  >
+    <h1
+      className="List__title"
+    >
+      2011年の春アニメ
+    </h1>
+    <span
+      className="List__works"
+    >
+      1作品
+    </span>
+  </div>
+  <Masonry
+    breakpointCols={
+      Object {
+        "1160": 3,
+        "1456": 4,
+        "default": 5,
+      }
+    }
+    className="List__masonry"
+    columnClassName="List__column"
+  >
+    <Card
+      broadcastStartDate="2011-04-15"
+      key="0"
+      title="電波女と青春男"
+    >
+      <Memo(Song)
+        items={
+          Array [
+            Object {
+              "animeClassification": "TV",
+              "animeDescription": "OP",
+              "animeName": "電波女と青春男",
+              "artistName": "大亀あすか",
+              "broadcastOrder": "",
+              "broadcastStartDate": "2011-04-15",
+              "musicName": "Os-宇宙人",
+            },
+            Object {
+              "animeClassification": "TV",
+              "animeDescription": "ED",
+              "animeName": "電波女と青春男",
+              "artistName": "やくしまるえつこ",
+              "broadcastOrder": "",
+              "broadcastStartDate": "2011-04-15",
+              "musicName": "ルル",
+            },
+          ]
+        }
+      />
+    </Card>
+  </Masonry>
+</div>
+`;

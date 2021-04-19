@@ -1,28 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Card /> Card render 1`] = `
-<Card
-  broadcastStartDate="2011-04-15"
-  title="電波女と青春男"
+exports[`<Card /> SnapShot 1`] = `
+<div
+  className="Card util-focus"
+  tabIndex={0}
 >
-  <div
-    className="Card util-focus"
-    tabIndex={0}
+  <time
+    className="Card__time"
+    dateTime="2011-04-15"
   >
-    <time
-      className="Card__time"
-      dateTime="2011-04-15"
-    >
-      2011.04.15
-    </time>
-    <h2
-      className="Card__title"
-    >
-      電波女と青春男
-    </h2>
-    <div>
-      Card Children
-    </div>
+    2011.04.15
+  </time>
+  <h2
+    className="Card__title"
+  >
+    電波女と青春男
+  </h2>
+  <div>
+    Card Children
   </div>
-</Card>
+</div>
 `;

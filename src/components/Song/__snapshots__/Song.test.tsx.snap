@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Song /> SnapShot（works） 1`] = `
+<div
+  className="Song"
+>
+  <div
+    aria-expanded={false}
+    className="Song__expand"
+    style={
+      Object {
+        "maxHeight": "auto",
+      }
+    }
+  >
+    <ol
+      className="Song__list"
+    >
+      <li
+        className="Song__item"
+        key="0"
+      >
+        <div
+          className="Song__badge"
+        >
+          <span
+            className="Song__badgeDescription Song__badgeDescriptionOp"
+          >
+            OP
+          </span>
+        </div>
+        <h3
+          className="Song__title"
+        >
+          Os-宇宙人
+        </h3>
+        <p
+          className="Song__artist"
+        >
+          大亀あすか
+        </p>
+      </li>
+      <li
+        className="Song__item"
+        key="1"
+      >
+        <div
+          className="Song__badge"
+        >
+          <span
+            className="Song__badgeDescription Song__badgeDescriptionEd"
+          >
+            ED
+          </span>
+        </div>
+        <h3
+          className="Song__title"
+        >
+          ルル
+        </h3>
+        <p
+          className="Song__artist"
+        >
+          やくしまるえつこ
+        </p>
+      </li>
+    </ol>
+  </div>
+</div>
+`;

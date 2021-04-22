@@ -6,6 +6,10 @@ import Song from './Song';
 import { act } from 'react-dom/test-utils';
 
 describe('<Song />', () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
   const items = [
     {
       animeName: '電波女と青春男',
@@ -31,24 +35,27 @@ describe('<Song />', () => {
     expect(shallow(<Song items={items} />)).toMatchSnapshot();
   });
 
-  //   it('useEffect Test', () => {
-  //     const listMinHeight = jest.fn();
-  //     const listMaxHeight = jest.fn();
-  //     const useRefMock = {
-  //       current: null,
-  //     };
+  it('useEffect Test', () => {
+    const isOpen = jest.fn();
+    const listMinHeight = jest.fn();
+    const listMaxHeight = jest.fn();
+    const useRefMock = {
+      current: null,
+    };
 
-  //     jest
-  //       .spyOn(React, 'useState')
-  //       .mockImplementation(() => [0, listMinHeight])
-  //       .mockImplementation(() => [0, listMaxHeight]);
-  //     jest.spyOn(React, 'useRef').mockReturnValueOnce(useRefMock);
+    jest
+      .spyOn(React, 'useState')
+      .mockImplementationOnce(() => [false, isOpen])
+      .mockImplementationOnce(() => [0, listMinHeight])
+      .mockImplementationOnce(() => [0, listMaxHeight]);
+    jest.spyOn(React, 'useRef').mockReturnValueOnce(useRefMock);
 
-  //     act(() => {
-  //       mount(<Song items={items} />);
-  //     });
+    act(() => {
+      mount(<Song items={items} />);
+    });
 
-  //     expect(listMinHeight).toHaveBeenCalledTimes(1);
-  //     expect(listMaxHeight).toHaveBeenCalledTimes(1);
-  //   });
+    expect(isOpen).toHaveBeenCalledTimes(0);
+    expect(listMinHeight).toHaveBeenCalledTimes(1);
+    expect(listMaxHeight).toHaveBeenCalledTimes(1);
+  });
 });

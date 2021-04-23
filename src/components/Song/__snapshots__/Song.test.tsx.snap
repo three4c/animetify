@@ -1,5 +1,326 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Song /> SnapShot（works） - expand（isOpen: false） 1`] = `
+<div
+  className="Song"
+>
+  <div
+    aria-expanded={false}
+    className="Song__expand Song__expandClose"
+    style={
+      Object {
+        "maxHeight": "auto",
+      }
+    }
+  >
+    <ol
+      className="Song__list"
+    >
+      <li
+        className="Song__item"
+        key="0"
+      >
+        <div
+          className="Song__badge"
+        >
+          <span
+            className="Song__badgeDescription Song__badgeDescriptionOp"
+          >
+            OP
+          </span>
+        </div>
+        <h3
+          className="Song__title"
+        >
+          Ring of Fortune
+        </h3>
+        <p
+          className="Song__artist"
+        >
+          佐々木恵梨
+        </p>
+      </li>
+      <li
+        className="Song__item"
+        key="1"
+      >
+        <div
+          className="Song__badge"
+        >
+          <span
+            className="Song__badgeDescription Song__badgeDescriptionEd"
+          >
+            ED
+          </span>
+          <span
+            className="Song__badgeBroadcastOrder Song__badgeBroadcastOrderSpot"
+          >
+            第1話のみ放映
+          </span>
+        </div>
+        <h3
+          className="Song__title"
+        >
+          again & again
+        </h3>
+        <p
+          className="Song__artist"
+        >
+          メロディー・チューバック
+        </p>
+      </li>
+      <li
+        className="Song__item"
+        key="2"
+      >
+        <div
+          className="Song__badge"
+        >
+          <span
+            className="Song__badgeDescription Song__badgeDescriptionEd"
+          >
+            ED
+          </span>
+          <span
+            className="Song__badgeBroadcastOrder"
+          >
+            1
+          </span>
+        </div>
+        <h3
+          className="Song__title"
+        >
+          朝焼けのスターマイン
+        </h3>
+        <p
+          className="Song__artist"
+        >
+          今井麻美
+        </p>
+      </li>
+      <li
+        className="Song__item"
+        key="3"
+      >
+        <div
+          className="Song__badge"
+        >
+          <span
+            className="Song__badgeDescription Song__badgeDescriptionEd"
+          >
+            ED
+          </span>
+          <span
+            className="Song__badgeBroadcastOrder Song__badgeBroadcastOrderSpot"
+          >
+            スポット放映
+          </span>
+        </div>
+        <h3
+          className="Song__title"
+        >
+          Ring of Fortune
+        </h3>
+        <p
+          className="Song__artist"
+        >
+          佐々木恵梨
+        </p>
+      </li>
+    </ol>
+  </div>
+  <button
+    aria-label="もっと見るボタン"
+    className="Song__button util-focus"
+    onClick={[Function]}
+  >
+    もっと見る
+  </button>
+</div>
+`;
+
+exports[`<Song /> SnapShot（works） - expand（isOpen: true） 1`] = `
+<Memo(Song)
+  items={
+    Array [
+      Object {
+        "animeClassification": "TV",
+        "animeDescription": "OP",
+        "animeName": "プラスティック・メモリーズ",
+        "artistName": "佐々木恵梨",
+        "broadcastOrder": "",
+        "broadcastStartDate": "2015-04-05",
+        "musicName": "Ring of Fortune",
+      },
+      Object {
+        "animeClassification": "TV",
+        "animeDescription": "ED",
+        "animeName": "プラスティック・メモリーズ",
+        "artistName": "メロディー・チューバック",
+        "broadcastOrder": "第1話のみ放映",
+        "broadcastStartDate": "2015-04-05",
+        "musicName": "again & again",
+      },
+      Object {
+        "animeClassification": "TV",
+        "animeDescription": "ED",
+        "animeName": "プラスティック・メモリーズ",
+        "artistName": "今井麻美",
+        "broadcastOrder": "1",
+        "broadcastStartDate": "2015-04-05",
+        "musicName": "朝焼けのスターマイン",
+      },
+      Object {
+        "animeClassification": "TV",
+        "animeDescription": "ED",
+        "animeName": "プラスティック・メモリーズ",
+        "artistName": "佐々木恵梨",
+        "broadcastOrder": "スポット放映",
+        "broadcastStartDate": "2015-04-05",
+        "musicName": "Ring of Fortune",
+      },
+    ]
+  }
+>
+  <div
+    className="Song"
+  >
+    <div
+      aria-expanded={true}
+      className="Song__expand"
+      style={
+        Object {
+          "maxHeight": "0px",
+        }
+      }
+    >
+      <ol
+        className="Song__list"
+      >
+        <li
+          className="Song__item"
+          key="0"
+        >
+          <div
+            className="Song__badge"
+          >
+            <span
+              className="Song__badgeDescription Song__badgeDescriptionOp"
+            >
+              OP
+            </span>
+          </div>
+          <h3
+            className="Song__title"
+          >
+            Ring of Fortune
+          </h3>
+          <p
+            className="Song__artist"
+          >
+            佐々木恵梨
+          </p>
+        </li>
+        <li
+          className="Song__item"
+          key="1"
+        >
+          <div
+            className="Song__badge"
+          >
+            <span
+              className="Song__badgeDescription Song__badgeDescriptionEd"
+            >
+              ED
+            </span>
+            <span
+              className="Song__badgeBroadcastOrder Song__badgeBroadcastOrderSpot"
+            >
+              第1話のみ放映
+            </span>
+          </div>
+          <h3
+            className="Song__title"
+          >
+            again & again
+          </h3>
+          <p
+            className="Song__artist"
+          >
+            メロディー・チューバック
+          </p>
+        </li>
+        <li
+          className="Song__item"
+          key="2"
+        >
+          <div
+            className="Song__badge"
+          >
+            <span
+              className="Song__badgeDescription Song__badgeDescriptionEd"
+            >
+              ED
+            </span>
+            <span
+              className="Song__badgeBroadcastOrder"
+            >
+              1
+            </span>
+          </div>
+          <h3
+            className="Song__title"
+          >
+            朝焼けのスターマイン
+          </h3>
+          <p
+            className="Song__artist"
+          >
+            今井麻美
+          </p>
+        </li>
+        <li
+          className="Song__item"
+          key="3"
+        >
+          <div
+            className="Song__badge"
+          >
+            <span
+              className="Song__badgeDescription Song__badgeDescriptionEd"
+            >
+              ED
+            </span>
+            <span
+              className="Song__badgeBroadcastOrder Song__badgeBroadcastOrderSpot"
+            >
+              スポット放映
+            </span>
+          </div>
+          <h3
+            className="Song__title"
+          >
+            Ring of Fortune
+          </h3>
+          <p
+            className="Song__artist"
+          >
+            佐々木恵梨
+          </p>
+        </li>
+      </ol>
+    </div>
+    <button
+      aria-label="もっと見るボタン"
+      className="Song__button util-focus"
+      onClick={[Function]}
+    >
+      閉じる
+    </button>
+  </div>
+</Memo(Song)>
+`;
+
 exports[`<Song /> SnapShot（works） 1`] = `
 <div
   className="Song"

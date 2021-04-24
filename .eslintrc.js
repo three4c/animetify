@@ -34,5 +34,7 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     /** シングルクォーテーション（''）とセミコロン（;）が無ければエラー */
     'prettier/prettier': ['error', { singleQuote: true, semi: true }],
+    /** anyは許容 */
+    '@typescript-eslint/no-explicit-any': 'off',
   },
 };

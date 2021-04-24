@@ -4,6 +4,7 @@ import { shallow, mount } from 'enzyme';
 
 import Song from './Song';
 import { act } from 'react-dom/test-utils';
+import { create } from 'react-test-renderer';
 
 describe('<Song />', () => {
   afterEach(() => {
@@ -70,11 +71,43 @@ describe('<Song />', () => {
     },
   ];
 
-  it('SnapShot（works）', () => {
+  it('SnapShot（works） - maxHeight:auto', () => {
+    const isOpen = jest.fn();
+    const listMinHeight = jest.fn();
+    const listMaxHeight = jest.fn();
+
+    jest
+      .spyOn(React, 'useState')
+      .mockImplementationOnce(() => [false, isOpen])
+      .mockImplementationOnce(() => [0, listMinHeight])
+      .mockImplementationOnce(() => [0, listMaxHeight]);
+    expect(shallow(<Song items={items} />)).toMatchSnapshot();
+  });
+
+  it('SnapShot（works） - maxHeight:100', () => {
+    const isOpen = jest.fn();
+    const listMinHeight = jest.fn();
+    const listMaxHeight = jest.fn();
+
+    jest
+      .spyOn(React, 'useState')
+      .mockImplementationOnce(() => [false, isOpen])
+      .mockImplementationOnce(() => [100, listMinHeight])
+      .mockImplementationOnce(() => [100, listMaxHeight]);
     expect(shallow(<Song items={items} />)).toMatchSnapshot();
   });
 
   it('SnapShot（works） - expand（isOpen: false）', () => {
+    const isOpen = jest.fn();
+    const listMinHeight = jest.fn();
+    const listMaxHeight = jest.fn();
+
+    jest
+      .spyOn(React, 'useState')
+      .mockImplementationOnce(() => [false, isOpen])
+      .mockImplementationOnce(() => [100, listMinHeight])
+      .mockImplementationOnce(() => [100, listMaxHeight]);
+
     expect(shallow(<Song items={expandItems} />)).toMatchSnapshot();
   });
 

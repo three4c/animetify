@@ -6,15 +6,11 @@ import { shallow } from 'enzyme';
 
 import Search from './Search';
 
-jest.mock('react-redux', () => {
-  const tmp = {
-    ...jest.requireActual('react-redux'),
-    useSelector: jest.fn(),
-    useDispatch: jest.fn(),
-  };
-
-  return tmp;
-});
+jest.mock('react-redux', () => ({
+  ...jest.requireActual('react-redux'),
+  useSelector: jest.fn(),
+  useDispatch: jest.fn(),
+}));
 
 const useSelectorMock = useSelector as jest.Mock;
 const useDispatchMcok = useDispatch as jest.Mock;

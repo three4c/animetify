@@ -32,7 +32,7 @@ export const setSuggestText = (suggestText: GlobalState['suggestText']) => {
   };
 };
 
-const initialState: GlobalState = {
+export const initialState: GlobalState = {
   searchText: '',
   searchYear: '',
   searchSeason: '',

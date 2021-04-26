@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { GlobalState } from '../../store';
 
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 
 import Search from './Search';
 
@@ -24,7 +24,24 @@ const mockState: GlobalState = {
 };
 
 describe('<Search />', () => {
-  it('SnapShot', () => {
+  it('SnapShot - searhFlag:false', () => {
+    useSelectorMock.mockImplementation((callback: any) => callback(mockState));
+    useDispatchMcok.mockReturnValue(jest.fn());
+    expect(shallow(<Search />)).toMatchSnapshot();
+  });
+
+  it('SnapShot(searchText) - searhFlag:true', () => {
+    mockState.searchFlag = true;
+    useSelectorMock.mockImplementation((callback: any) => callback(mockState));
+    useDispatchMcok.mockReturnValue(jest.fn());
+    expect(shallow(<Search />)).toMatchSnapshot();
+  });
+
+  it('SnapShot(yeaer && season) - searhFlag:true', () => {
+    mockState.searchFlag = true;
+    mockState.searchText = '';
+    mockState.searchYear = '2011';
+    mockState.searchSeason = '春';
     useSelectorMock.mockImplementation((callback: any) => callback(mockState));
     useDispatchMcok.mockReturnValue(jest.fn());
     expect(shallow(<Search />)).toMatchSnapshot();

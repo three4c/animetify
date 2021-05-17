@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { GlobalState } from '../../store';
 
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 
 import Search from './Search';
 

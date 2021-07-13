@@ -1,0 +1,24 @@
+.Tab {
+  margin-bottom: 8px;
+
+  & &__list {
+    display: flex;
+
+    &Item {
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      &Button {
+        background-color: #f8f8f8;
+        border-radius: 4px;
+        padding: 4px 8px 2px;
+
+        &[aria-selected='true'] {
+          background-color: #fcad43;
+          color: white;
+        }
+      }
+    }
+  }
+}
